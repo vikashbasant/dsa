@@ -1,0 +1,62 @@
+					Regular Expression Matching:
+					--------------------------------
+
+Grid Rule:
+	1: s.charAt(j) != p.charAt(i) <-- False
+	2: s.charAt(j) == p.charAt(i) <-- See diagonally upword
+	3: p.charAt(i) == '.' <-- See diagonally upword
+
+1st Columns Rule for pattern:
+	p.charAt(i) == '*' <-- 2 rows above
+	./c(dot ya any charater) <-- false
+
+Math Formula:
+		
+				   mi      miss*
+				       \     /
+					\/
+					mis*
+
+
+Rule: boolean dp[][] = new dp[s.length()+1][p.length()+1]; where p = pattern, s = string.
+
+1: if(i==0 && j==0){
+	// 0th row and 0th column are always true
+        dp[i][j] = true;
+}
+
+2: else if(i == 0){
+	// 0th rows are alway false
+	dp[i][j] = false;
+}
+
+3: else if(j == 0){
+	char pc = p.charAt(i-1);
+          if(pc == '*'){
+		// pattern character are '* ' then see the (i-2)th rows
+           	dp[i][j] = dp[i-2][j];
+          }else{
+		// otherwise false
+                    dp[i][j] = false;
+          }
+}
+
+4:else{
+           char pc = p.charAt(i-1);
+           char sc = s.charAt(j-1);
+                    
+           if(pc == '*'){                                                                                                              
+                        dp[i][j] = dp[i-2][j];
+                        char pslc = p.charAt(i-2);
+                        if(pslc == '.' || pslc == sc){
+                            dp[i][j] = dp[i][j] || dp[i][j-1];
+                        }
+           }else if(pc == '.'){
+                        dp[i][j] = dp[i-1][j-1];
+           }else if(pc == sc){
+                        dp[i][j] = dp[i-1][j-1];
+           }else{
+                        dp[i][j] = false;
+           }
+                   
+}
