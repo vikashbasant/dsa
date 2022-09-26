@@ -38,6 +38,7 @@ public class ValidParentheses {
         return stack.isEmpty();
     }
 
+
     /**
      * timeComplexity: O(N)
      * spaceComplexity: O(1)

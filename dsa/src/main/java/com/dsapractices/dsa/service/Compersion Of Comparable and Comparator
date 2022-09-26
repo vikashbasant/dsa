@@ -1,0 +1,13 @@
+                                    Comparable
+1. Comparable meant for Default Natural Sorting Order.
+2. Comparable interface present in import java.lang.Comparable package.
+3. Comparable interface contains only one method i.e compareTo(Obj o).
+4. Which classes implements Comparable interface, all Wrapper Classes and String Classes.
+
+                                    Comparator
+1. Comparator meant for Customized Sorting Order.
+2. Comparator interface present in import java.util.Comparator package.
+3. Comparator interface contains only 2 methods i.e equals(), compare(Obj o1, Obj o2).
+4. Which classes implements Comparator interface, We are responsible to implements Comparator interface for customized
+Sorting Order.
+5. But only 2 classes implements Comparator interface i.e Collator and RuleBasedCollator.

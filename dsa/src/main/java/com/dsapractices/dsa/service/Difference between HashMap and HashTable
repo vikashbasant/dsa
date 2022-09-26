@@ -1,0 +1,21 @@
+//=============================: HashMap:=========================//
+1. Every method present in HashMap is not Synchronized.
+2. At every time HashMap Object multiple thread are allow to operate(that why it is not thread safe)
+3. To operate on HashMap Object, thread are not required to wait(that why relatively performance is high).
+4. In HashMap (null as a key & null as a value) is allow.
+5. HashMap is not legacy( It is introduced in 1.2v)
+
+//============================: Hashtable:===========================//
+1. Every method present in HashMap is Synchronizer.
+2. At every time Hashtable Object only one thread are allow to operate(that why it is thread safe).
+3. To operate on Hashtable Object, thread are required to wait(that why relatively performance is low).
+4. In Hashtable (null as a key & null as a value) is not allow(otherwise we will get NPE(NullPointerException)).
+5. Hashtable is legacy(It is introduced in 1.0v)
+
+
+# How to get Synchronized version of HashMap:
+HashMap m = new HashMap();
+Map m1 = Collections.synchronizedMap(m);
+where
+    m: Non-Synchronized
+    m1: Synchronized
