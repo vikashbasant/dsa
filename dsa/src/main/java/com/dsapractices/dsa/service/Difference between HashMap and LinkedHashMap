@@ -1,0 +1,16 @@
+//=======================: HashMap :=====================//
+1. Underlying DataStructure is Hashtable.
+2*. Here Insertion Order in not preserved. And it is based on hashCode of keys.
+3. Introduce in 1.2v
+
+//=======================: LinkedHashMap :=====================//
+1. Underlying DataStructure is Hashtable + LinkedList (Hybrid DataStructure).
+2*. Here Insertion Order is preserved.
+3. Introduce in 1.4v
+
+
+Note:
+    LinkedHashMap/LinkedHashSet are commonly used for developing cache based applications.
+
+Note:
+    Inside the HashMap always comparison if keys are duplicate or not: Using .equals method.

@@ -1,0 +1,7 @@
+1. Identity HashMap, It is exactly same as HashMap(including methods and constructor)
+except the following differences:
+    1. In the case of normal hashmap, JVM will used .equals() methods to identify duplicate keys,
+    which is meant for content comparison.
+
+    2. But in the case of identityHashMap, JVm will used == operators to identify duplicate keys,
+    which is meant for reference comparison(address comparison).

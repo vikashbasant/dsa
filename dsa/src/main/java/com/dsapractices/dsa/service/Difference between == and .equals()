@@ -1,0 +1,18 @@
+== Operators:
+1.  This operator are meant for address/reference comparison.
+2. In general == Operators are meant for reference comparison(address comparison).
+
+.equals() Methods:
+1. This methods meant for content comparison.
+2. .equals() methods are meant for content comparison.
+
+Ex:
+    Class Main{
+        public static void main(String[] args){
+            Integer I1 = new Integer(10);
+            Integer I2 = new Integer(10);
+
+            System.out.println(I1 == I2); // return false
+            System.out.println(I1.equals(I2)); // return true
+        }
+    }
