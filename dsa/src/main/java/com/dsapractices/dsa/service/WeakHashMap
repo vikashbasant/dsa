@@ -1,0 +1,7 @@
+WeakHashmap:
+1. It is exactly same as hashMap, except the following differences:
+    1. In the case of hashMap, even though object does not have any reference, it not eligible for gc().
+    If it is associated with hashMap that is hashMap dominate garbage collector.
+
+    2. But in the case of WeakHashMap, if object doesn't contains any reference, it is eligible for gc().
+    Even though object associated with WeakHashMap. that is garbage collector dominate WeakHashMap.
