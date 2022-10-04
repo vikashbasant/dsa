@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class HashMapDemo2 {
     public static void main(String[] args) throws InterruptedException {
         HashMap m = new HashMap();
-        Temp t = new Temp();
+        TempHashtable t = new TempHashtable();
         m.put(t, "vikas");
         System.out.println(m);
 
