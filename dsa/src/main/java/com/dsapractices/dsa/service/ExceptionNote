@@ -1,0 +1,31 @@
+Checked Exception:
+    1. The Exception which are checked by compiler (weather programmer is handle or not) for smooth excavation of
+    program at run time. So this exception are by-default considered as Checked Exception.
+
+    2. Checked Exception should be handle by programmer like(try and catch block or throws keywords)
+
+    3. ex: IOException, FileNotFoundException, InterruptedException, SQLException, Throwable, Exception etc.
+
+Unchecked Exception:
+    1. The Exception which are not checked by compiler (Weather the programmer handling or not) , So this exception are
+    by-default considered as Unchecked Exception.
+
+    2. ex: ArithmeticException, NullPointerException, ClassCastException etc.
+
+
+-> All errors and it's child classes and RuntimeException and it's child classes are unchecked
+    exception. other than this 2 classes all the other classes are checked exception.
+
+-> Exception and Throwable are partially checked exceptions (because it contains some checked exception as well as
+unchecked exception as well).
+
+-> Describe the behavior of the following exception:
+1. IOException -> Checked (Fully Checked)
+2. RuntimeException -> (Unchecked)
+3. InterruptedException -> Checked (Fully Checked)
+4. Error -> (Unchecked)
+5. Throwable -> Checked (Partially Checked)
+6. ArithmeticException -> (Unchecked)
+7. NullPointerException -> (Unchecked)
+8. Exception -> Checked (Partially Checked)
+9. FileNotFoundException -> Checked (Fully Checked)
