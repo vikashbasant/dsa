@@ -13,9 +13,12 @@ public class FindGCDAndLCM {
      * @return
      */
     private static int gcdHelper(int num1, int num2){
+        // Base Case: If the remainder is 0 then return divisor:
         if(num1 == 0){
             return num2;
         }
+
+        // Induction Step & Induction Hypothesis: until remainder is 0:
         return gcdHelper(num2%num1, num1);
     }
 
