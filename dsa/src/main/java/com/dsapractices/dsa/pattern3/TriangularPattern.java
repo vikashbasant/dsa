@@ -3,18 +3,27 @@ package com.dsapractices.dsa.pattern3;
 import java.util.Scanner;
 
 public class TriangularPattern {
+
     /**
      * All Type of triangular pattern:
+     * TimeComplexity: O(num*i) i.e (i===num) in worst case O(num^2)
+     * SpaceComplexity:O(1)
      * @param num
      */
     private static void printTriangularPattern(int num){
-        for(int i=0; i<num; i++){
-            for(int j=0; j<=i; j++){
-                System.out.print("* ");
+        for(int i=0; i<num; i++){ // Total number of rows:
+            for(int j=0; j<=i; j++){ // Total number of columns:
+                System.out.print("* "); // What we need to print:
             }
-            System.out.println();
+            System.out.println(); // For new line:
         }
     }
+
+    /**
+     * TimeComplexity: O(num^2)
+     * SpaceComplexity: O(1)
+     * @param num
+     */
     private static void printTriangularPatternNumber(int num){
         for(int i=1; i<=num; i++){
             for(int j=1; j<=i; j++){
@@ -69,6 +78,6 @@ public class TriangularPattern {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
-        interestingAlphabets(num);
+        printTriangularPattern(num);
     }
 }
