@@ -1,4 +1,4 @@
-package com.dsapractices.dsa.pepcoding;
+package com.dsapractices.dsa.pepcoding.basicConcept;
 
 import java.util.Scanner;
 
