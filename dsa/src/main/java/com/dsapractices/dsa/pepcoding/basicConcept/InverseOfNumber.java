@@ -27,6 +27,7 @@ public class InverseOfNumber {
     private static int inverseNumber(int num){
         int position = 0;
         int inverseNum = 0;
+        // Loop is traverse till num become 0:
         while(num>0){
             // Find the remainder:
             int rem = num%10;

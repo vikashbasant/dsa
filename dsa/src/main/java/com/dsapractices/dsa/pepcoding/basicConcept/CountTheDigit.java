@@ -13,6 +13,7 @@ public class CountTheDigit {
      */
     private static int countDigit(int num){
         int count = 0;
+        // Loop traverse until num become 0:
         while(num > 0){
             count++;
             num/=10;
